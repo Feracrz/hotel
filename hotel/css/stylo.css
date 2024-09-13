@@ -73,6 +73,9 @@ h3 {
     text-align: center;
 }
 
+
+/* empieza carrucel */
+
 .carrucel {
     display: flex;
     align-items: center;
@@ -110,7 +113,7 @@ h3 {
     justify-content: center;
 }
 
-.text he {
+.texto-c h1 {
     text-shadow: 0px 0px 15px var(--oscuro);
     padding-top: 40px;
     color: var(--blanco);
@@ -118,7 +121,7 @@ h3 {
     font-size: 27px;
 }
 
-.text p {
+.texto-c p {
     align-items: center;
     padding: 20px;
     color: var(--blanco);
@@ -131,6 +134,43 @@ h3 {
     height: 100px;
     transition: 1s;
 }
+
+.imagenes:hover .text {
+    transition: height 1s, transform 1s, background-color 1s;
+    transform: translateY(-150px);
+    height: 300px;
+    background-color: rgba(63, 106, 138, .71);
+    text-shadow: 0px 0px 10px var(--oscuro);
+}
+
+.imagenes:hover .txto p {
+    transition: font-size 0s .2s linear;
+    font-size: 23px;
+    font-weight: 300;
+}
+
+.puntos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.puntos p {
+    font-size: 100px;
+    font-weight: 500;
+    margin-top: -50px;
+    color: var(--oscuro);
+}
+
+.puntos .bold {
+    font-weight: 700;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #5E17EB;
+}
+
+
+/*termina  carrusel*/
 
 .boton {
     background-color: var(--secundario);
