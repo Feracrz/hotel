@@ -69,108 +69,9 @@ h3 {
 
 h1,
 h2,
-h3 {
+h5 {
     text-align: center;
 }
-
-
-/* empieza carrucel */
-
-.carrucel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    width: 100%;
-    height: 100vh;
-}
-
-.imagenes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
-}
-
-.img {
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, .85);
-    min-height: 576px;
-    width: 1134px;
-    border-radius: 15px;
-    object-fit: cover;
-    filter: saturate(175%);
-}
-
-.texto-c {
-    overflow: hidden;
-    position: absolute;
-    flex-direction: column;
-    transform: translateY(0px);
-    margin-bottom: 9px;
-    backdrop-filter: blur(20px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.texto-c h1 {
-    text-shadow: 0px 0px 15px var(--oscuro);
-    padding-top: 40px;
-    color: var(--blanco);
-    font-weight: 300;
-    font-size: 27px;
-}
-
-.texto-c p {
-    align-items: center;
-    padding: 20px;
-    color: var(--blanco);
-    font-size: 0px;
-    font-weight: 300;
-}
-
-.imagenes .texto {
-    width: 600px;
-    height: 100px;
-    transition: 1s;
-}
-
-.imagenes:hover .text {
-    transition: height 1s, transform 1s, background-color 1s;
-    transform: translateY(-150px);
-    height: 300px;
-    background-color: rgba(63, 106, 138, .71);
-    text-shadow: 0px 0px 10px var(--oscuro);
-}
-
-.imagenes:hover .txto p {
-    transition: font-size 0s .2s linear;
-    font-size: 23px;
-    font-weight: 300;
-}
-
-.puntos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.puntos p {
-    font-size: 100px;
-    font-weight: 500;
-    margin-top: -50px;
-    color: var(--oscuro);
-}
-
-.puntos .bold {
-    font-weight: 700;
-    margin-left: 10px;
-    margin-right: 10px;
-    color: #5E17EB;
-}
-
-
-/*termina  carrusel*/
 
 .boton {
     background-color: var(--secundario);
@@ -209,7 +110,8 @@ h3 {
 }
 
 .titulo {
-    font-size: 3rem;
+    font-size: 2rem;
+    color: var(--blanco);
 }
 
 .titulo span {
@@ -242,7 +144,7 @@ h3 {
 }
 
 .contenedor {
-    max-width: 120rem;
+    max-width: 100%;
     /* si incluyes el "max" a width y lo dejamos asi  va ayudar a ajustar el */
     margin: 0 auto;
 }
@@ -250,7 +152,7 @@ h3 {
 .navegacion-principal {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 @media (min-width:768px) {
@@ -289,7 +191,8 @@ h3 {
 
 .logo img {
     border-radius: 50%;
-    width: 5%;
+    width: 7rem;
+    margin: .5rem;
 }
 
 .hero {
